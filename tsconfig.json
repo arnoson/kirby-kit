@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"lib": ["ESNext", "dom"],
+		"target": "ESNext",
+		"module": "ESNext",
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+		"paths": { "@/*": ["./site/*"] },
+		"types": ["vite/client"]
+	},
+	"include": ["./**/*.ts"],
+	"exclude": ["node_modules/**/*"]
+}

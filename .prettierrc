@@ -1,0 +1,6 @@
+{
+  "semi": false,
+  "singleQuote": true,
+  "phpVersion": "8.1",
+  "braceStyle": "1tbs"
+}

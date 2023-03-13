@@ -1,0 +1,24 @@
+{
+	"type": "module",
+	"scripts": {
+		"uno": "unocss \"site/{layouts,snippets,templates}/**/*\" --out-file site/styles/uno.css",
+		"dev": "concurrently \"npm run uno -- --watch\" \"vite\" --n uno,vite --c blue,green",
+		"build": "npm run uno && vite build",
+		"deploy": "npm run build && deploy"
+	},
+	"devDependencies": {
+		"@prettier/plugin-php": "^0.19.3",
+		"@types/node": "^18.15.1",
+		"concurrently": "^7.6.0",
+		"modern-css-reset": "^1.4.0",
+		"prettier": "^2.8.4",
+		"sass": "^1.59.2",
+		"unocss": "^0.50.4",
+		"vite-plugin-kirby": "^0.1.3"
+	},
+	"dependencies": {
+		"@very-simple/components": "^0.4.0",
+		"@very-simple/deploy": "^0.0.4",
+		"loadeer": "^2.1.2"
+	}
+}

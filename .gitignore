@@ -1,0 +1,34 @@
+.DS_Store
+node_modules/
+.dev
+.env
+
+# Frontend
+/public/assets/
+/public/dist/
+
+# Kirby
+/kirby
+/vendor
+/content
+
+/site/plugins/*
+!/site/plugins/helpers
+!/site/plugins/components
+
+/public/media/*
+!/public/media/index.html
+
+/storage/accounts/*
+!/storage/accounts/.gitkeep
+
+/storage/cache/*
+!/storage/cache/.gitkeep
+
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+/storage/sessions/*
+!/storage/sessions/.gitkeep
+
+/site/config/.license
