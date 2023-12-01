@@ -1,11 +1,8 @@
-import 'modern-css-reset'
-import '../styles/index.scss'
-import Loadeer from 'loadeer'
+import '~/styles/index.scss'
 import { mountComponents } from '@very-simple/components'
 
 import.meta.glob('../(templates|snippets|layouts)/**/*.(ts|scss)', {
-	eager: true,
+  eager: true,
 })
 
 mountComponents()
-new Loadeer().observe()

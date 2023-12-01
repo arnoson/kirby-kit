@@ -1,12 +1,12 @@
 {
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"[php]": {
-		"editor.formatOnSave": true,
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	"files.associations": {
+		"*.kirby": "php"
 	},
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.patterns": {
-		"*.php": "${capture}.js, ${capture}.ts, ${capture}.css, ${capture}.scss"
-	}
+		"*.kirby": "${capture}.js, ${capture}.ts, ${capture}.css"
+	},
+	"intelephense.environment.phpVersion": "8.1"
 }

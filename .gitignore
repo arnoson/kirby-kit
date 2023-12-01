@@ -12,10 +12,10 @@ node_modules/
 /kirby
 /vendor
 /content
+/site/compiled
 
 /site/plugins/*
-!/site/plugins/helpers
-!/site/plugins/components
+!/site/plugins/custom*
 
 /public/media/*
 !/public/media/index.html

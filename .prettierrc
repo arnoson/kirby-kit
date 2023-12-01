@@ -1,6 +1,17 @@
 {
-  "semi": false,
-  "singleQuote": true,
-  "phpVersion": "8.1",
-  "braceStyle": "1tbs"
+	"plugins": ["@prettier/plugin-php"],
+	"semi": false,
+	"tabWidth": 2,
+	"useTabs": false,
+	"singleQuote": true,
+	"overrides": [
+		{
+			"files": ["*.php", "*.kirby"],
+			"options": {
+				"parser": "php",
+				"phpVersion": "8.1",
+				"braceStyle": "1tbs"
+			}
+		}
+	]
 }

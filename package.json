@@ -1,22 +1,24 @@
 {
-	"type": "module",
-	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
-		"deploy": "only-branch main && npm run build && NODE_ENV=production deploy",
-		"deploy-no-build": "only-branch main && NODE_ENV=production deploy",
-		"stage": "npm run build && NODE_ENV=development deploy",
-		"stage-no-build": "NODE_ENV=development deploy"
-	},
-	"devDependencies": {
-		"@prettier/plugin-php": "^0.21.0",
-		"@types/node": "^20.0.0",
-		"only-branch": "^0.0.2",
-		"prettier": "^3.0.0",
-		"vite-plugin-kirby": "^5.0.1"
-	},
-	"dependencies": {
-		"@very-simple/components": "^0.6.0",
-		"@very-simple/deploy": "^0.0.6"
-	}
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "ddev start && npm run dev",
+    "deploy": "only-branch main && npm run build && NODE_ENV=production deploy",
+    "deploy-no-build": "only-branch main && NODE_ENV=production deploy",
+    "stage": "npm run build && NODE_ENV=development deploy",
+    "stage-no-build": "NODE_ENV=development deploy"
+  },
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.21.0",
+    "@types/node": "^20.0.0",
+    "only-branch": "^0.0.2",
+    "prettier": "^3.0.0",
+    "vite-plugin-kirby": "^5.0.1",
+    "vite-plugin-kirby-template-sugar": "^0.3.0"
+  },
+  "dependencies": {
+    "@very-simple/components": "^0.6.0",
+    "@very-simple/deploy": "^0.0.6"
+  }
 }

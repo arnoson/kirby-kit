@@ -3,7 +3,7 @@
 		"getkirby/cms": "^4.0",
 		"arnoson/kirby-vite": "^5.0",
 		"arnoson/kirby-auto-srcset": "^2.0",
-		"getkirby/layouts": "^2.0"
+		"arnoson/kirby-template-sugar": "^0.3.0"
 	},
 	"config": {
 		"optimize-autoloader": true,
