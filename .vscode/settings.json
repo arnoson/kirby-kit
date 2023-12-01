@@ -1,12 +1,14 @@
 {
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"files.associations": {
-		"*.kirby": "php"
-	},
-	"explorer.fileNesting.enabled": true,
-	"explorer.fileNesting.patterns": {
-		"*.kirby": "${capture}.js, ${capture}.ts, ${capture}.css"
-	},
-	"intelephense.environment.phpVersion": "8.1"
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.associations": {
+    "*.kirby": "php"
+  },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.kirby": "${capture}.js, ${capture}.ts, ${capture}.css"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "css.lint.validProperties": ["vector-effect"],
+  "intelephense.environment.phpVersion": "8.1"
 }

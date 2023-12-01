@@ -1,4 +1,7 @@
-<nav class="menu" aria-label="Main Menu">
+<nav <?= attributes([
+  'class' => 'menu',
+  'aria-label' => 'Hauptmenü',
+])->merge($attr ?? []) ?>>
   <ul>
     <?php foreach (
       $site
@@ -8,7 +11,7 @@
       as $child
     ): ?>
       <li>
-        <a <?= attr([
+        <a <?= attributes([
           'href' => $child->url(),
           'aria-current' => $child->isActive() ? 'page' : null,
         ]) ?>><?= $child->title() ?></a>

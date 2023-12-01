@@ -13,4 +13,4 @@ My personal [Kirby](https://getkirby.com/) starter kit
 - 📚 Code co-location with file nesting
 - 🔄 Live Reload on templates/snippets/layout changes
 - 🦾 Typescript
-- 🎨 Modern CSS with nesting and custom media queries
+- 🎨 Modern CSS w/ nesting, layers, custom media queries
