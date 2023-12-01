@@ -1,0 +1,11 @@
+@import './layers.css';
+@import './reset.css';
+@import './media.css';
+@import './colors.css';
+@import './text.css';
+
+@layer default {
+  :root {
+    --z-menu: 1;
+  }
+}

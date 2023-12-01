@@ -1,0 +1,27 @@
+@import '~/layers.css';
+
+@layer default {
+  :root {
+    /* Size */
+    --text-sm: 0.875rem;
+    --text-md: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.2rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+
+    /* Weight */
+    --font-thin: 300;
+    --font-normal: 400;
+    --font-semi: 500;
+    --font-bold: 600;
+
+    /* Line height */
+    --leading-none: 1;
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.625;
+    --leading-loose: 2;
+  }
+}

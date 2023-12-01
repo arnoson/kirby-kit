@@ -1,0 +1,8 @@
+@import '~/layers.css';
+
+@layer default {
+  :root {
+    --color-black: black;
+    --color-white: white;
+  }
+}
