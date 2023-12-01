@@ -1,7 +1,7 @@
 {
 	"require": {
-		"getkirby/cms": "^3.9",
-		"arnoson/kirby-vite": "^3.0",
+		"getkirby/cms": "^4.0",
+		"arnoson/kirby-vite": "^5.0",
 		"arnoson/kirby-auto-srcset": "^2.0",
 		"getkirby/layouts": "^2.0"
 	},

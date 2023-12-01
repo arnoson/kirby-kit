@@ -1,24 +1,22 @@
 {
 	"type": "module",
 	"scripts": {
-		"uno": "unocss \"site/{layouts,snippets,templates}/**/*\" --out-file site/styles/uno.css",
-		"dev": "concurrently \"npm run uno -- --watch\" \"vite\" --n uno,vite --c blue,green",
-		"build": "npm run uno && vite build",
-		"deploy": "npm run build && deploy"
+		"dev": "vite",
+		"build": "vite build",
+		"deploy": "only-branch main && npm run build && NODE_ENV=production deploy",
+		"deploy-no-build": "only-branch main && NODE_ENV=production deploy",
+		"stage": "npm run build && NODE_ENV=development deploy",
+		"stage-no-build": "NODE_ENV=development deploy"
 	},
 	"devDependencies": {
-		"@prettier/plugin-php": "^0.19.3",
-		"@types/node": "^18.15.1",
-		"concurrently": "^7.6.0",
-		"modern-css-reset": "^1.4.0",
-		"prettier": "^2.8.4",
-		"sass": "^1.59.2",
-		"unocss": "^0.50.4",
-		"vite-plugin-kirby": "^0.1.3"
+		"@prettier/plugin-php": "^0.21.0",
+		"@types/node": "^20.0.0",
+		"only-branch": "^0.0.2",
+		"prettier": "^3.0.0",
+		"vite-plugin-kirby": "^5.0.1"
 	},
 	"dependencies": {
-		"@very-simple/components": "^0.4.0",
-		"@very-simple/deploy": "^0.0.4",
-		"loadeer": "^2.1.2"
+		"@very-simple/components": "^0.6.0",
+		"@very-simple/deploy": "^0.0.6"
 	}
 }
