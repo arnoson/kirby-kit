@@ -2,6 +2,7 @@
 node_modules/
 .dev
 .env
+.vscode/.*
 
 # Frontend
 /public/assets/
