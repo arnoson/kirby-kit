@@ -1,4 +1,4 @@
-@import '~/layers.css';
+@import './layers.css';
 
 @layer default {
   :root {
