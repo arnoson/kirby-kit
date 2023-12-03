@@ -1,8 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "rm -rf ./site/compiled && vite",
+    "build": "rm -rf ./site/compiled && vite build",
     "start": "ddev start && npm run dev",
     "deploy": "only-branch main && npm run build && NODE_ENV=production deploy",
     "deploy-no-build": "only-branch main && NODE_ENV=production deploy",
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@very-simple/components": "^0.6.0",
-    "@very-simple/deploy": "^0.0.6"
+    "@very-simple/deploy": "^0.0.6",
+    "unlazy": "^0.10.2"
   }
 }

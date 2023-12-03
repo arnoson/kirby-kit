@@ -9,7 +9,8 @@
 		"bnomei/kirby3-janitor": "^4.0",
 		"sylvainjule/backups": "^1.0",
 		"fabianmichael/kirby-meta": "^1.0",
-		"bnomei/kirby3-dotenv": "^2.2"
+		"bnomei/kirby3-dotenv": "^2.2",
+		"tobimori/kirby-thumbhash": "^1.1"
 	},
 	"config": {
 		"optimize-autoloader": true,
