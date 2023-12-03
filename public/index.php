@@ -20,6 +20,4 @@ $kirby = new Kirby\Cms\App([
   ],
 ]);
 
-echo option('bnomei.janitor.secret');
-
-// echo $kirby->render();
+echo $kirby->render();

@@ -9,7 +9,7 @@
   <?= vite()->css('scripts/index.ts') ?>
   <?= vite()->js('scripts/index.ts', ['defer' => true]) ?>
 </head>
-<body class="no-js" data-template="<?= $page->intendedTemplate()->name() ?>">
+<body class="no-js" data-template="<?= $page->template()->name() ?>">
   <script>document.body.classList.remove('no-js')</script>
   <snippet:menu />
   <main><?= $slots->default() ?></main>
