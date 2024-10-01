@@ -18,6 +18,7 @@ My personal [Kirby](https://getkirby.com/) starter kit
 - 📬 Local email testing
 - 🗄️ Backups
 - 🔑 dotenv
+- ⚙️ Various settings (format on save, german timezone, main branch protection)
 
 ## Development
 
