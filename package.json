@@ -10,11 +10,11 @@
     "stage-no-build": "NODE_ENV=development deploy"
   },
   "devDependencies": {
-    "@prettier/plugin-php": "^0.21.0",
+    "@prettier/plugin-php": "^0.22.0",
     "@types/node": "^20.0.0",
     "only-branch": "^0.0.2",
-    "postcss-custom-media": "^10.0.2",
-    "postcss-nesting": "^12.0.1",
+    "postcss-custom-media": "^11.0.1",
+    "postcss-nesting": "^13.0.0",
     "prettier": "^3.0.0",
     "vite-plugin-kirby": "^5.0.1",
     "vite-plugin-kirby-template-sugar": "^0.3.0"
@@ -22,6 +22,6 @@
   "dependencies": {
     "@very-simple/components": "^0.6.0",
     "@very-simple/deploy": "^0.0.6",
-    "unlazy": "^0.10.2"
+    "unlazy": "^0.11.3"
   }
 }
