@@ -17,6 +17,7 @@
     "postcss-custom-media": "^11.0.1",
     "postcss-nesting": "^13.0.0",
     "prettier": "^3.0.0",
+    "prettier-plugin-css-order": "^2.1.2",
     "vite-plugin-kirby": "^5.0.1",
     "vite-plugin-kirby-template-sugar": "^0.3.0"
   },
