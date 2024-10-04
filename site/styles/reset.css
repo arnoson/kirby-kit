@@ -36,16 +36,16 @@
   h4,
   h5,
   h6 {
-    overflow-wrap: break-word;
     text-align: left;
+    overflow-wrap: break-word;
   }
 
   button {
-    border: none;
     margin: 0;
+    border: none;
+    background: transparent;
     padding: 0;
     width: auto;
-    background: transparent;
     color: inherit;
     font: inherit;
     line-height: normal;

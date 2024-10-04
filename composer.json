@@ -1,21 +1,21 @@
 {
-	"require": {
-		"getkirby/cms": "^4.0",
-		"arnoson/kirby-vite": "^5.0",
-		"arnoson/kirby-auto-srcset": "^2.0",
-		"arnoson/kirby-template-sugar": "^0.3.0",
-		"fabianmichael/kirby-template-attributes": "^2.0",
-		"getkirby/cli": "^1.1",
-		"bnomei/kirby3-janitor": "^4.0",
-		"sylvainjule/backups": "^1.0",
-		"fabianmichael/kirby-meta": "^1.0",
-		"bnomei/kirby3-dotenv": "^2.2",
-		"tobimori/kirby-thumbhash": "^1.1"
-	},
-	"config": {
-		"optimize-autoloader": true,
-		"allow-plugins": {
-			"getkirby/composer-installer": true
-		}
-	}
+  "require": {
+    "getkirby/cms": "^4.0",
+    "arnoson/kirby-vite": "^5.0",
+    "arnoson/kirby-auto-srcset": "^2.0",
+    "arnoson/kirby-template-sugar": "^0.3.0",
+    "fabianmichael/kirby-template-attributes": "^2.0",
+    "getkirby/cli": "^1.1",
+    "bnomei/kirby3-janitor": "^4.0",
+    "sylvainjule/backups": "^1.0",
+    "fabianmichael/kirby-meta": "^1.0",
+    "bnomei/kirby3-dotenv": "^2.2",
+    "tobimori/kirby-thumbhash": "^1.1"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  }
 }

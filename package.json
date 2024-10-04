@@ -7,7 +7,8 @@
     "deploy": "only-branch main && npm run build && NODE_ENV=production deploy",
     "deploy-no-build": "only-branch main && NODE_ENV=production deploy",
     "stage": "npm run build && NODE_ENV=development deploy",
-    "stage-no-build": "NODE_ENV=development deploy"
+    "stage-no-build": "NODE_ENV=development deploy",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@prettier/plugin-php": "^0.22.0",
