@@ -11,6 +11,6 @@
   },
   "css.lint.unknownAtRules": "ignore",
   "css.lint.validProperties": ["vector-effect"],
-  "intelephense.environment.phpVersion": "8.2",
+  "intelephense.environment.phpVersion": "8.3",
   "cSpell.words": ["loadenv"]
 }
