@@ -7,7 +7,7 @@ My personal [Kirby](https://getkirby.com/) starter kit
 - ⚡️ [Vite](https://vitejs.dev/)
 - 🐳 [DDEV](https://ddev.com/)
 - ♻️ [Very Simple Components](https://github.com/very-simple/components)
-- 🚀 [Very Simple Deploy](https://github.com/very-simple/deploy)
+- 🚀 [Kirby Deploy](https://github.com/arnoson/kirby-deploy)
 - 🍬 [Kirby Template Sugar](https://github.com/arnoson/kirby-template-sugar)
 - 📂 Public folder structure
 - 📚 Code co-location with file nesting
@@ -17,7 +17,7 @@ My personal [Kirby](https://getkirby.com/) starter kit
 - 🐛 Debugging
 - 📬 Local email testing
 - 🗄️ Backups
-- 🔑 dotenv
+- 🔑 Dotenv
 - ⚙️ Various settings (format on save, german timezone, main branch protection)
 
 ## Development
@@ -50,22 +50,10 @@ Build and upload the website to your production webspace:
 npm run deploy
 ```
 
-If you don't want to build before deploy (in case no ts/css/kirby files changed):
-
-```bash
-npm run deploy-no-build
-```
-
 ## Staging
 
 Build and upload the website to your staging webspace:
 
 ```bash
 npm run stage
-```
-
-If you don't want to build before staging (in case no ts/css/kirby files changed):
-
-```bash
-npm run stage-no-build
 ```
