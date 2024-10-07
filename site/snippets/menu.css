@@ -1,4 +1,4 @@
-@import '~/props.css';
+@import '~/styles/props.css';
 
 @layer component {
   .menu {

@@ -3,12 +3,10 @@
 @layer default {
   :root {
     /* Size */
-    --text-sm: 0.875rem;
-    --text-md: 1rem;
-    --text-lg: 1.125rem;
-    --text-xl: 1.2rem;
-    --text-2xl: 1.5rem;
-    --text-3xl: 1.875rem;
+    --text-sm: fluid(0.75rem, 1rem, 640px, 1024px);
+    --text-md: fluid(1rem, 1.5rem, 640px, 1024px);
+    --text-lg: fluid(1.5rem, 2.5rem, 640px, 1024px);
+    --text-xl: fluid(2rem, 3.5rem, 640px, 1024px);
 
     /* Weight */
     --font-thin: 300;

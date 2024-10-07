@@ -7,5 +7,17 @@
 @layer default {
   :root {
     --z-menu: 1;
+
+    /* Sizes */
+    --size-1: clamp(0.5rem, 1rem, 640px, 1024px);
+    --size-2: clamp(1rem, 1.5rem, 640px, 1024px);
+    --size-3: clamp(1.5rem, 2rem, 640px, 1024px);
+    --size-4: clamp(2rem, 3rem, 640px, 1024px);
+    --size-5: clamp(4rem, 5rem, 640px, 1024px);
+    --size-6: clamp(5rem, 7.5rem, 640px, 1024px);
+    --size-7: clamp(7.5rem, 10rem, 640px, 1024px);
+    --size-8: clamp(10rem, 15rem, 640px, 1024px);
+    --size-9: clamp(15rem, 20rem, 640px, 1024px);
+    --size-10: clamp(20rem, 30rem, 640px, 1024px);
   }
 }

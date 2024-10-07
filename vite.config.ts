@@ -1,3 +1,4 @@
+import postcssFluid from '@lehoczky/postcss-fluid'
 import { resolve } from 'node:path'
 import postcssCustomMedia from 'postcss-custom-media'
 import postcssNesting from 'postcss-nesting'
@@ -14,7 +15,9 @@ export default defineConfig(({ mode }) => ({
 
   css: {
     devSourcemap: true,
-    postcss: { plugins: [postcssNesting(), postcssCustomMedia()] },
+    postcss: {
+      plugins: [postcssNesting(), postcssCustomMedia(), postcssFluid()],
+    },
   },
 
   build: {
