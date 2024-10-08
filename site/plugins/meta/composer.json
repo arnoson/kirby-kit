@@ -1,0 +1,48 @@
+{
+    "name": "fabianmichael/kirby-meta",
+    "type": "kirby-plugin",
+    "version": "1.0.2",
+    "license": "MIT",
+    "description": "Your all-in-one powerhouse for any SEO and metadata needs imaginable.",
+    "homepage": "https://github.com/fabianmichael/kirby-meta",
+    "authors": [
+        {
+            "name": "Fabian Michael",
+            "email": "hallo@fabianmichael.de"
+        }
+    ],
+    "keywords": [
+        "kirby3",
+        "kirby3-cms",
+        "kirby3-plugin",
+        "meta",
+        "metadata",
+        "seo",
+        "panel"
+    ],
+    "autoload": {
+        "psr-4": {
+            "FabianMichael\\Meta\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "getkirby/composer-installer": true
+        }
+    },
+    "require": {
+        "php": ">=8.0.0",
+        "getkirby/composer-installer": "^1.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.8"
+    },
+    "extra": {
+        "installer-name": "meta"
+    },
+    "scripts": {
+        "cs-fixer": "vendor/bin/php-cs-fixer fix --dry-run --diff",
+        "cs-fixer-fix": "vendor/bin/php-cs-fixer fix --diff"
+    }
+}

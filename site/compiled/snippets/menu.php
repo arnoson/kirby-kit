@@ -1,0 +1,18 @@
+<nav <?= attributes([
+  'class' => 'menu',
+  'aria-label' => 'Hauptmenü',
+])->merge($attr ?? []) ?>>
+  <ul>
+    <?php foreach (
+      $site->children()->listed()->prepend($site->homePage())
+      as $child
+    ): ?>
+      <li>
+        <a <?= attributes([
+          'href' => $child->url(),
+          'aria-current' => $child->isActive() ? 'page' : null,
+        ]) ?>><?= $child->title() ?></a>
+      </li>
+    <?php endforeach; ?>
+  </ul>
+</nav>

@@ -1,0 +1,14 @@
+# os
+.DS_Store
+
+# vendor files
+/node_modules
+/vendor
+
+# cs fixer
+.php-cs-fixer.cache
+
+# tests
+.phpunit.cache
+/tests/coverage
+/tests/tmp

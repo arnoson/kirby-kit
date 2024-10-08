@@ -1,0 +1,57 @@
+{
+	"name": "fabianmichael/kirby-template-attributes",
+	"description": "Better HTML attribute handling for your snippets and templates.",
+	"homepage": "https://github.com/fabianmichael/kirby-template-attributes",
+	"license": "MIT",
+	"type": "kirby-plugin",
+	"version": "2.3.0",
+	"authors": [
+		{
+			"name": "Fabian Michael",
+			"email": "hallo@fabianmichael.de"
+		}
+	],
+	"require-dev": {
+		"friendsofphp/php-cs-fixer": "^3.13",
+		"phpunit/phpunit": "^9",
+		"phpmd/phpmd" : "@stable",
+		"vimeo/psalm": "^5.1",
+		"getkirby/cms": "^4.1.0",
+		"squizlabs/php_codesniffer": "^3.9"
+	},
+	"require": {
+		"getkirby/composer-installer": "^1.2",
+		"ext-dom": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"FabianMichael\\TemplateAttributes\\": "src/"
+		},
+		"files": [
+			"helpers.php"
+		]
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"allow-plugins": {
+			"getkirby/composer-installer": true
+		}
+	},
+	"scripts": {
+		"linter": "vendor/bin/php-cs-fixer fix --dry-run --diff",
+    "linter:fix": "vendor/bin/php-cs-fixer fix --diff",
+		"test": "phpunit --stderr",
+		"analyze": [
+			"@analyze:composer",
+			"@analyze:psalm",
+			"@analyze:phpmd"
+		],
+		"analyze:composer": "composer validate --strict --no-check-version --no-check-all",
+		"analyze:psalm": "psalm",
+		"analyze:phpmd": "phpmd . ansi phpmd.xml.dist --exclude 'tests/*,vendor/*'"
+	},
+	"extra": {
+		"kirby-cms-path": false,
+		"installer-name": "template-attributes"
+	}
+}

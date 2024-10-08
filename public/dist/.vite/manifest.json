@@ -1,0 +1,11 @@
+{
+  "scripts/index.ts": {
+    "file": "assets/index-3L43wA2U.js",
+    "name": "index",
+    "src": "scripts/index.ts",
+    "isEntry": true,
+    "css": [
+      "assets/index-Btx3-fnJ.css"
+    ]
+  }
+}

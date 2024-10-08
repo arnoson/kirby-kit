@@ -7,19 +7,8 @@ node_modules/
 .env.*
 !.env.*.example
 
-# Frontend
-/public/assets/
-/public/dist/
-/site/config/vite.config.php
-
 # Kirby
-/kirby
-/vendor
 /content
-/site/compiled
-
-/site/plugins/*
-!/site/plugins/custom*
 
 /public/media/*
 !/public/media/index.html

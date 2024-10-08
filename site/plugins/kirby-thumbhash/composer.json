@@ -1,0 +1,39 @@
+{
+  "name": "tobimori/kirby-thumbhash",
+  "description": "Kirby Image placeholders with the smarter ThumbHash integration",
+  "type": "kirby-plugin",
+  "version": "1.1.1",
+  "license": "MIT",
+  "homepage": "https://github.com/tobimori/kirby-thumbhash#readme",
+  "authors": [
+    {
+      "name": "Tobias Möritz",
+      "email": "tobias@moeritz.io"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "tobimori\\": "classes/"
+    }
+  },
+  "require": {
+    "php": ">=8.0.0",
+    "getkirby/composer-installer": "^1.2",
+    "srwiez/thumbhash": "^1.1"
+  },
+  "require-dev": {
+    "getkirby/cms": "^3.8"
+  },
+  "scripts": {
+    "dist": "composer install --no-dev --optimize-autoloader"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "extra": {
+    "kirby-cms-path": false
+  }
+}

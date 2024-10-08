@@ -1,0 +1,70 @@
+{
+  "name": "bnomei/kirby3-dotenv",
+  "type": "kirby-plugin",
+  "version": "2.2.0",
+  "description": "Kirby 3 Plugin for environment variables from .env",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bruno Meilick",
+      "email": "b@bnomei.com"
+    }
+  ],
+  "keywords": [
+    "kirby3",
+    "kirby3-cms",
+    "kirby3-plugin",
+    "dotenv",
+    "dotenv-loader",
+    "enviroment-variables"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Bnomei\\": "classes/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "getkirby/composer-installer": "^1.1",
+    "vlucas/phpdotenv": "^5.3"
+  },
+  "scripts": {
+    "analyze": "phpstan analyse classes",
+    "fix": "php-cs-fixer fix",
+    "test": [
+      "mkdir -p tests/logs",
+      "@putenv XDEBUG_MODE=coverage",
+      "phpunit --configuration ./phpunit.xml"
+    ],
+    "dist": [
+      "composer install --no-dev --optimize-autoloader",
+      "git rm -rf --cached .; git add .;"
+    ],
+    "kirby": [
+      "composer install",
+      "composer update",
+      "composer install --working-dir=tests/kirby --no-dev --optimize-autoloader",
+      "composer update --working-dir=tests/kirby"
+    ]
+  },
+  "require-dev": {
+    "getkirby/cms": "^3.5",
+    "php-coveralls/php-coveralls": "^2.1",
+    "phpunit/phpunit": "^9.5"
+  },
+  "extra": {
+    "kirby-cms-path": "tests/kirby"
+  },
+  "suggest": {
+    "bnomei/kirby3-lapse": "For faster and automatic caching based on modification of Kirby Objects",
+    "bnomei/kirby3-janitor": "Use a Panel Button or PHP code to clear the cache",
+    "bnomei/kirby3-security-headers": "CPS headers to make the the web a saver place. Sensible defaults with zero configuration.",
+    "robinscholz/better-rest": "Allows you to send authenticated GET requests querying the Kirby API"
+  }
+}
