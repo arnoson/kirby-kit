@@ -10,5 +10,5 @@ export default defineConfig({
   password: process.env.FTP_PASSWORD!,
   url: process.env.URL,
   token: process.env.TOKEN,
-  folderStructure: 'public',
+  folderStructure: 'composer',
 })

@@ -1,5 +1,5 @@
 # Kirby .htaccess
-# revision 2022-09-15
+# revision 2023-07-22
 
 # rewrite rules
 <IfModule mod_rewrite.c>
@@ -31,15 +31,6 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 # except for the .well-known folder, which is used for Let's Encrypt and security.txt
 RewriteRule (^|/)\.(?!well-known\/) index.php [L]
 
-# block all files in the content folder from being accessed directly
-RewriteRule ^content/(.*) index.php [L]
-
-# block all files in the site folder from being accessed directly
-RewriteRule ^site/(.*) index.php [L]
-
-# block direct access to Kirby and the Panel sources
-RewriteRule ^kirby/(.*) index.php [L]
-
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -50,6 +41,15 @@ RewriteRule ^(.*) index.php [L]
 # pass the Authorization header to PHP
 SetEnvIf Authorization "(.+)" HTTP_AUTHORIZATION=$1
 
+
+# caching
+<IfModule mod_headers.c>
+# 1 year for assets
+<FilesMatch "\.(ico|jpg|jpeg|svg|webp|webm,avif|gif|png|pdf|mp3|mp4|css|js|woff|woff2|ttf|otf|eot)$">
+Header set Cache-Control "public, max-age=31536000, no-transform, immutable"
+</FilesMatch>
+</IfModule> 
+
 # compress text file responses
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/plain
@@ -59,4 +59,14 @@ AddOutputFilterByType DEFLATE text/javascript
 AddOutputFilterByType DEFLATE application/json
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# set security headers in all responses
+<IfModule mod_headers.c>
+
+# serve files as plain text if the actual content type is not known
+# (hardens against attacks from malicious file uploads)
+Header set Content-Type "text/plain" "expr=-z %{CONTENT_TYPE}"
+Header set X-Content-Type-Options "nosniff"
+
 </IfModule>

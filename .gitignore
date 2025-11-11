@@ -1,39 +1,88 @@
+# System files
+# ------------
+
+Icon
 .DS_Store
-node_modules/
-.vscode/.*
+
+# Temporary files
+# ---------------
+
+/public/media/*
+!/public/media/.gitkeep
+
+# Lock files
+# ---------------
+
+.lock
+
+# Editors
+# (sensitive workspace files)
+# ---------------------------
+
+*.sublime-workspace
+/.vscode
+/.idea
+
+# Env files
+# ---------------------------
+
 .dev
 .env
-!.env.example
 .env.*
+!.env.example
 !.env.*.example
 
-# Frontend
-/public/assets/
+# Vite
+# ---------------------
+
 /public/dist/
 /site/config/vite.config.php
 
-# Kirby
-/kirby
+# Composer dependencies
+# ---------------------
+
+/node_modules
+
+# Composer dependencies
+# ---------------------
+
 /vendor
-/content
-/site/compiled
+
+# Plugins
+# ---------------------
 
 /site/plugins/*
 !/site/plugins/custom*
 
-/public/media/*
-!/public/media/index.html
+# Compiled snippets and templates (Kirby Template Sugar)
+# ---------------------
 
-/storage/accounts/*
-!/storage/accounts/.gitkeep
+/site/compiled
 
-/storage/cache/*
-!/storage/cache/.gitkeep
+# Content
+# ---------------------
 
-/storage/logs/*
-!/storage/logs/.gitkeep
+/data/storage/content/*
 
-/storage/sessions/*
-!/storage/sessions/.gitkeep
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
 
-/site/config/.license
+# Accounts
+# ---------------
+
+/data/storage/accounts/*
+!/data/storage/accounts/.gitkeep
+
+# Runtime Files
+# ---------------
+
+/data/runtime/*
+!/data/runtime/cache/.gitkeep
+!/data/runtime/logs/.gitkeep
+!/data/runtime/sessions/.gitkeep
+
+# License
+# ---------------
+
+/data/storage/.license

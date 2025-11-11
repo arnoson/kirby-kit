@@ -1,22 +1,25 @@
 <?php
 
-include __DIR__ . '/../vendor/autoload.php';
+use Kirby\Cms\App as Kirby;
 
-$kirby = new Kirby\Cms\App([
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+$kirby = new Kirby([
   'roots' => [
     'index' => __DIR__,
     'base' => ($base = dirname(__DIR__)),
-    'content' => "$base/content",
-    'site' => ($site = "$base/site"),
-
-    'templates' => "$site/compiled/templates",
-    'snippets' => "$site/compiled/snippets",
-    'layouts' => "$site/compiled/layouts",
-
-    'storage' => ($storage = "$base/storage"),
-    'accounts' => "$storage/accounts",
-    'cache' => "$storage/cache",
-    'sessions' => "$storage/sessions",
+    'site' => ($site = $base . '/site'),
+    'data' => ($data = $base . '/data'),
+    'content' => $data . '/storage/content',
+    'accounts' => $data . '/storage/accounts',
+    'languages' => $data . '/storage/languages',
+    'license' => $data . '/storage/.license',
+    'cache' => $data . '/runtime/cache',
+    'logs' => $data . '/runtime/logs',
+    'sessions' => $data . '/runtime/sessions',
+    // Compiled files (Kirby Template Sugar)
+    'templates' => $site . '/compiled/templates',
+    'snippets' => $site . '/compiled/snippets',
   ],
 ]);
 
