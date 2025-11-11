@@ -16,7 +16,6 @@ My personal [Kirby](https://getkirby.com/) starter kit
 - 🎨 Modern CSS w/ nesting, layers, custom media queries
 - 🐛 Debugging
 - 📬 Local email testing
-- 🗄️ Backups
 - 🔑 Dotenv
 - ⚙️ Various settings (format on save, german timezone, main branch protection)
 

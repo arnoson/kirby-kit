@@ -13,6 +13,10 @@ export default defineConfig(({ mode }) => ({
   resolve: { alias: { '~': resolve(process.cwd(), './site') } },
   publicDir: false,
 
+  server: {
+    cors: { origin: 'https://kirby-kit.ddev.site' },
+  },
+
   css: {
     devSourcemap: true,
     postcss: {

@@ -1,5 +1,5 @@
-<layout:default />
+<k:layouts/default>
 
 <h1><?= $page->title() ?></h1>
 
-<snippet:image $image="<? $page->files()->first() ?>" />
+<k:image $image="<? $page->files()->first() ?>" />

@@ -10,19 +10,19 @@
   },
   "devDependencies": {
     "@lehoczky/postcss-fluid": "^1.0.3",
-    "@prettier/plugin-php": "^0.22.0",
-    "@types/node": "^20.0.0",
-    "kirby-deploy": "^0.1.0",
+    "@prettier/plugin-php": "^0.24.0",
+    "@types/node": "^22.19.0",
+    "kirby-deploy": "^0.2.0",
     "only-branch": "^0.0.2",
-    "postcss-custom-media": "^11.0.1",
-    "postcss-nesting": "^13.0.0",
-    "prettier": "^3.0.0",
+    "postcss-custom-media": "^11.0.6",
+    "postcss-nesting": "^13.0.2",
+    "prettier": "^3.6.2",
     "prettier-plugin-css-order": "^2.1.2",
-    "vite-plugin-kirby": "^5.0.1",
-    "vite-plugin-kirby-template-sugar": "^0.3.0"
+    "vite-plugin-kirby": "^5.6.1",
+    "vite-plugin-kirby-template-sugar": "^1.0.0"
   },
   "dependencies": {
-    "@very-simple/components": "^0.6.0",
-    "unlazy": "^0.11.3"
+    "@very-simple/components": "^0.8.0",
+    "unlazy": "^1.0.0"
   }
 }

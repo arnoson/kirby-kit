@@ -11,7 +11,7 @@
 </head>
 <body class="no-js" data-template="<?= $page->template()->name() ?>">
   <script>document.body.classList.remove('no-js')</script>
-  <snippet:menu />
+  <k:menu />
   <main><?= $slots->default() ?></main>
 </body>
 </html>

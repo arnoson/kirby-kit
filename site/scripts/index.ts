@@ -2,7 +2,7 @@ import { mountComponents } from '@very-simple/components'
 import { lazyLoad } from 'unlazy'
 import '~/styles/index.css'
 
-import.meta.glob('../(templates|snippets|layouts)/**/*.(ts|css)', {
+import.meta.glob('../(templates|snippets)/**/*.(ts|css)', {
   eager: true,
 })
 
