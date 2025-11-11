@@ -9,9 +9,9 @@ My personal [Kirby](https://getkirby.com/) starter kit
 - ♻️ [Very Simple Components](https://github.com/very-simple/components)
 - 🚀 [Kirby Deploy](https://github.com/arnoson/kirby-deploy)
 - 🍬 [Kirby Template Sugar](https://github.com/arnoson/kirby-template-sugar)
-- 📂 Public folder structure
+- 📂 [Composer-kit](https://github.com/getkirby/composerkit) folder structure
 - 📚 Code co-location with file nesting
-- 🔄 Live Reload on templates/snippets/layout changes
+- 🔄 Live Reload on templates/snippets changes
 - 🦾 Typescript
 - 🎨 Modern CSS w/ nesting, layers, custom media queries
 - 🐛 Debugging
