@@ -1,3 +1,4 @@
+import postcssGlobalData from '@csstools/postcss-global-data'
 import postcssFluid from '@lehoczky/postcss-fluid'
 import { resolve } from 'node:path'
 import postcssCustomMedia from 'postcss-custom-media'
@@ -20,7 +21,14 @@ export default defineConfig(({ mode }) => ({
   css: {
     devSourcemap: true,
     postcss: {
-      plugins: [postcssNesting(), postcssCustomMedia(), postcssFluid()],
+      plugins: [
+        postcssGlobalData({
+          files: ['site/styles/media.css', 'site/styles/layers.css'],
+        }),
+        postcssCustomMedia(),
+        postcssNesting(),
+        postcssFluid(),
+      ],
     },
   },
 
