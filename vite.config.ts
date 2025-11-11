@@ -22,9 +22,7 @@ export default defineConfig(({ mode }) => ({
     devSourcemap: true,
     postcss: {
       plugins: [
-        postcssGlobalData({
-          files: ['site/styles/media.css', 'site/styles/layers.css'],
-        }),
+        postcssGlobalData({ files: ['site/styles/media.css'] }),
         postcssCustomMedia(),
         postcssNesting(),
         postcssFluid(),
