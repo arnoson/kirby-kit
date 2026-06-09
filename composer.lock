@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "acf19d139a27cbca58ec2eed328e237e",
+  "content-hash": "b89793b5d594b2e978e77f094cd80b4e",
   "packages": [
     {
       "name": "arnoson/kirby-auto-srcset",
@@ -2518,25 +2518,29 @@
     },
     {
       "name": "tobimori/kirby-thumbhash",
-      "version": "1.1.1",
+      "version": "2.1.1",
       "source": {
         "type": "git",
         "url": "https://github.com/tobimori/kirby-thumbhash.git",
-        "reference": "9cd6c2d93f171a8cd484a686d267ff8adbb2b9fe"
+        "reference": "733857e7b5b0b7993e014d900039ae0f5ab9fe87"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/tobimori/kirby-thumbhash/zipball/9cd6c2d93f171a8cd484a686d267ff8adbb2b9fe",
-        "reference": "9cd6c2d93f171a8cd484a686d267ff8adbb2b9fe",
+        "url": "https://api.github.com/repos/tobimori/kirby-thumbhash/zipball/733857e7b5b0b7993e014d900039ae0f5ab9fe87",
+        "reference": "733857e7b5b0b7993e014d900039ae0f5ab9fe87",
         "shasum": ""
       },
       "require": {
+        "ext-gd": "*",
         "getkirby/composer-installer": "^1.2",
-        "php": ">=8.0.0",
+        "php": ">=8.3.0",
         "srwiez/thumbhash": "^1.1"
       },
       "require-dev": {
-        "getkirby/cms": "^3.8"
+        "getkirby/cms": "^5.0"
+      },
+      "suggest": {
+        "ext-imagick": "For better performance and quality with Imagick driver"
       },
       "type": "kirby-plugin",
       "extra": {
@@ -2561,7 +2565,7 @@
       "homepage": "https://github.com/tobimori/kirby-thumbhash#readme",
       "support": {
         "issues": "https://github.com/tobimori/kirby-thumbhash/issues",
-        "source": "https://github.com/tobimori/kirby-thumbhash/tree/1.1.1"
+        "source": "https://github.com/tobimori/kirby-thumbhash/tree/2.1.1"
       },
       "funding": [
         {
@@ -2569,7 +2573,7 @@
           "type": "github"
         }
       ],
-      "time": "2024-04-12T16:48:19+00:00"
+      "time": "2026-03-08T15:37:18+00:00"
     },
     {
       "name": "vlucas/phpdotenv",
@@ -2656,7 +2660,41 @@
       "time": "2025-12-27T19:49:13+00:00"
     }
   ],
-  "packages-dev": [],
+  "packages-dev": [
+    {
+      "name": "arnoson/kirby-deploy",
+      "version": "0.4.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/arnoson/kirby-deploy.git",
+        "reference": "39d6774d59402501c1612be02573583bdd8278c1"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/arnoson/kirby-deploy/zipball/39d6774d59402501c1612be02573583bdd8278c1",
+        "reference": "39d6774d59402501c1612be02573583bdd8278c1",
+        "shasum": ""
+      },
+      "require": {
+        "getkirby/composer-installer": "^1.2"
+      },
+      "type": "kirby-plugin",
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Arno Schlipf"
+        }
+      ],
+      "support": {
+        "issues": "https://github.com/arnoson/kirby-deploy/issues",
+        "source": "https://github.com/arnoson/kirby-deploy/tree/v0.4.1"
+      },
+      "time": "2026-03-30T09:20:39+00:00"
+    }
+  ],
   "aliases": [],
   "minimum-stability": "stable",
   "stability-flags": {

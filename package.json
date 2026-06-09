@@ -4,8 +4,8 @@
     "dev": "rm -rf ./site/compiled && vite",
     "build": "rm -rf ./site/compiled && vite build",
     "start": "ddev start && npm run dev",
-    "deploy": "only-branch main && npm run build && NODE_ENV=production deploy",
-    "stage": "npm run build && NODE_ENV=development deploy",
+    "deploy": "only-branch main && npm run build && NODE_ENV=production kirby-deploy",
+    "stage": "npm run build && NODE_ENV=development kirby-deploy",
     "format": "prettier --write ."
   },
   "devDependencies": {
