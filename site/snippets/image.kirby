@@ -2,11 +2,17 @@
 
 use Kirby\Toolkit\A;
 
+/** @var \Kirby\Cms\File|null $image */
+$image ??= null;
 $format ??= 'webp';
 $lazy ??= true;
 $ratio ??= null;
 $sizes ??= null;
 $maxWidth ??= 3000;
+
+if (!$image) {
+  return;
+}
 
 $isSvg = $image->mime() === 'image/svg+xml';
 if ($isSvg) {
@@ -44,4 +50,4 @@ $lazyAttr = [
 
 <img <?= attributes(
   A::append($commonAttr, $lazy ? $lazyAttr : $normalAttr),
-)->merge($attr) ?> >
+)->merge($attr ?? []) ?> >

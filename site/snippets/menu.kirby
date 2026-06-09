@@ -1,3 +1,9 @@
+<?php
+/** @var \Kirby\Cms\Site $site */
+/** @var \Kirby\Cms\Page $page */
+/** @var \Kirby\Template\Slots $slots */
+?>
+
 <nav <?= attributes([
   'class' => 'menu',
   'aria-label' => 'Hauptmenü',

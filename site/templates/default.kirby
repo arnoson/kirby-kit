@@ -1,3 +1,7 @@
+<?php
+/** @var \Kirby\Cms\Page $page */
+?>
+
 <k:layouts/default>
 
 <h1><?= $page->title() ?></h1>
