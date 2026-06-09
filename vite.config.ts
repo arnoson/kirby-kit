@@ -3,9 +3,18 @@ import postcssFluid from '@lehoczky/postcss-fluid'
 import { resolve } from 'node:path'
 import postcssCustomMedia from 'postcss-custom-media'
 import postcssNesting from 'postcss-nesting'
-import { defineConfig } from 'vite'
+import { defineConfig, Plugin } from 'vite'
 import kirby from 'vite-plugin-kirby'
 import templateSugar from 'vite-plugin-kirby-template-sugar'
+import type { Plugin as PostcssPlugin } from 'postcss'
+
+// Inject CSS layers into each file to ensure correct order during development.
+const postcssLayers = (): PostcssPlugin => ({
+  postcssPlugin: 'layers',
+  Once(root) {
+    root.prepend('@layer reset, default, component, override;')
+  },
+})
 
 export default defineConfig(({ mode }) => ({
   root: 'site',
@@ -22,6 +31,7 @@ export default defineConfig(({ mode }) => ({
     devSourcemap: true,
     postcss: {
       plugins: [
+        postcssLayers(),
         postcssGlobalData({ files: ['site/styles/media.css'] }),
         postcssCustomMedia(),
         postcssNesting(),
