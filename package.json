@@ -9,14 +9,14 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "@csstools/postcss-global-data": "^3.1.0",
+    "@csstools/postcss-global-data": "^4.0.0",
     "@lehoczky/postcss-fluid": "^1.0.3",
-    "@prettier/plugin-php": "^0.24.0",
+    "@prettier/plugin-php": "^0.25.0",
     "@types/node": "^22.19.0",
-    "kirby-deploy": "^0.3.0",
+    "kirby-deploy": "^0.4.0",
     "only-branch": "^0.0.2",
-    "postcss-custom-media": "^11.0.6",
-    "postcss-nesting": "^13.0.2",
+    "postcss-custom-media": "^12.0.0",
+    "postcss-nesting": "^14.0.0",
     "prettier": "^3.6.2",
     "prettier-plugin-css-order": "^2.1.2",
     "vite-plugin-kirby": "^5.6.1",
@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "@very-simple/components": "^0.8.0",
-    "unlazy": "^1.0.0"
+    "unlazy": "^2.0.0"
   }
 }

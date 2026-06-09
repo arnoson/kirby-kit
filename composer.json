@@ -7,7 +7,7 @@
     "fabianmichael/kirby-template-attributes": "^2.0",
     "getkirby/cli": "^1.1",
     "bnomei/kirby3-dotenv": "^5.0",
-    "tobimori/kirby-thumbhash": "^1.1",
+    "tobimori/kirby-thumbhash": "^2.0",
     "tobimori/kirby-seo": "^2.0.0-alpha.8"
   },
   "config": {
