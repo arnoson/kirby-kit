@@ -31,11 +31,11 @@ export default defineConfig(({ mode }) => ({
     devSourcemap: true,
     postcss: {
       plugins: [
-        postcssLayers(),
         postcssGlobalData({ files: ['site/styles/media.css'] }),
+        postcssFluid({ min: '640px', max: '1024px' }),
         postcssCustomMedia(),
         postcssNesting(),
-        postcssFluid(),
+        postcssLayers(),
       ],
     },
   },

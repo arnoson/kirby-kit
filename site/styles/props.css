@@ -1,17 +1,42 @@
 @layer default {
   :root {
-    --z-menu: 1;
+    /* Colors */
+    --color-black: black;
+    --color-white: white;
+
+    /* Font Sizes */
+    --text-sm: fluid(0.75rem, 1rem);
+    --text-md: fluid(1rem, 1.5rem);
+    --text-lg: fluid(1.5rem, 2.5rem);
+    --text-xl: fluid(2rem, 3.5rem);
+
+    /* Font Weights */
+    --font-thin: 300;
+    --font-normal: 400;
+    --font-semi: 500;
+    --font-bold: 600;
+
+    /* Line height */
+    --leading-none: 1;
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.625;
+    --leading-loose: 2;
 
     /* Sizes */
-    --size-1: clamp(0.5rem, 1rem, 640px, 1024px);
-    --size-2: clamp(1rem, 1.5rem, 640px, 1024px);
-    --size-3: clamp(1.5rem, 2rem, 640px, 1024px);
-    --size-4: clamp(2rem, 3rem, 640px, 1024px);
-    --size-5: clamp(4rem, 5rem, 640px, 1024px);
-    --size-6: clamp(5rem, 7.5rem, 640px, 1024px);
-    --size-7: clamp(7.5rem, 10rem, 640px, 1024px);
-    --size-8: clamp(10rem, 15rem, 640px, 1024px);
-    --size-9: clamp(15rem, 20rem, 640px, 1024px);
-    --size-10: clamp(20rem, 30rem, 640px, 1024px);
+    --size-1: fluid(0.5rem, 1rem);
+    --size-2: fluid(1rem, 1.5rem);
+    --size-3: fluid(1.5rem, 2rem);
+    --size-4: fluid(2rem, 3rem);
+    --size-5: fluid(4rem, 5rem);
+    --size-6: fluid(5rem, 7.5rem);
+    --size-7: fluid(7.5rem, 10rem);
+    --size-8: fluid(10rem, 15rem);
+    --size-9: fluid(15rem, 20rem);
+    --size-10: fluid(20rem, 30rem);
+
+    /* Z-Indices */
+    --z-menu: 1;
   }
 }
